@@ -52,7 +52,7 @@ export class ConfirmedStateCaseChartComponent implements OnInit {
       data: {
         labels: states,
         datasets: [{
-          label: 'Total cases till today',
+          label: 'Confirmed cases till today',
           data: confirmed,
           backgroundColor: this.colorArray[0], // array should have same number of elements as number of dataset
           borderColor: this.colorArray[0],// array should have same number of elements as number of dataset

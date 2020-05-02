@@ -52,7 +52,7 @@ export class RecoveredStateCaseChartComponent implements OnInit {
       data: {
         labels: states,
         datasets: [{
-          label: 'Death cases till today',
+          label: 'Recovered cases till today',
           data: recovered,
           backgroundColor: this.colorArray[0], // array should have same number of elements as number of dataset
           borderColor: this.colorArray[0],// array should have same number of elements as number of dataset
