@@ -8,10 +8,12 @@ import { OverallCaseChartComponent } from './overall-case-chart/overall-case-cha
 import { ConfirmedStateCaseChartComponent } from './confirmed-state-case-chart/confirmed-state-case-chart.component';
 import { DeathStateCaseChartComponent } from './death-state-case-chart/death-state-case-chart.component';
 import { RecoveredStateCaseChartComponent } from './recovered-state-case-chart/recovered-state-case-chart.component';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'dailyCaseChart', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent},
   { path: 'dailyCaseChart', component: DailyCaseChartComponent, resolve: { chartData : ApiResolverService} },
   { path: 'overallCaseChart', component: OverallCaseChartComponent, resolve: { chartData : ApiResolverService} },
   { path: 'confirmedCaseChart', component: ConfirmedStateCaseChartComponent, resolve: { chartData : ApiResolverService} },

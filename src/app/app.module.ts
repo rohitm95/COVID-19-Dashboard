@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { AppInterceptor } from './shared/app-interceptor';
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     ConfirmedStateCaseChartComponent,
     ActiveStateCaseChartComponent,
     DeathStateCaseChartComponent,
-    RecoveredStateCaseChartComponent
+    RecoveredStateCaseChartComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
