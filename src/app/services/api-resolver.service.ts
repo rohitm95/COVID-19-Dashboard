@@ -10,6 +10,6 @@ export class ApiResolverService implements Resolve<any> {
   constructor(private http: HttpClient) { }
 
   resolve(){
-    return this.http.get('https://api.covid19india.org/data.json');
+    return this.http.get('https://data.covid19india.org/data.json');
   }
 }
